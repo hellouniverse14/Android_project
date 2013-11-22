@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/textseconds"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/setAlarmOneshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSelect"
+        android:layout_marginTop="43dp"
+        android:text="One Shot Alarm" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textseconds"
+        android:layout_alignBottom="@+id/textseconds"
+        android:layout_alignParentRight="true"
+        android:text="Set the Time" />
+
+    <Button
+        android:id="@+id/setAlarmRepeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setAlarmOneshot"
+        android:layout_alignBottom="@+id/setAlarmOneshot"
+        android:layout_toRightOf="@+id/textseconds"
+        android:text="Repeating Alarm" />
+
+    <Button
+        android:id="@+id/stopAlarmRepeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setAlarmOneshot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Stop Alarm" />
+
+</RelativeLayout>

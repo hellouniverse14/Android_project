@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sim</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ph_no">PhNo</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_safe_db">SafeDb</string>
+    <string name="title_activity_phno">Phno</string>
+    <string name="title_activity_phno_dummy">PhnoDummy</string>
+    <string name="title_activity_safe_dummy">SafeDummy</string>
+
+</resources>

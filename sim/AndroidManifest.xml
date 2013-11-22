@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sim"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.example.sim.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sim.Send_Sms"
+            android:label="@string/app_name" />
+
+        <service
+            android:name="com.example.sim.MainActivity"
+            android:label="My Service" >
+            <intent-filter>
+                <action android:name="com.example.MainActivity" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.example.sim.Brec"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.sim.PhNo"
+            android:label="@string/title_activity_ph_no" >
+        </activity>
+        <activity
+            android:name="com.example.sim.SafeDb"
+            android:label="@string/title_activity_safe_db" >
+        </activity>
+        <activity
+            android:name="com.example.sim.Phno"
+            android:label="@string/title_activity_phno" >
+        </activity>
+        <activity
+            android:name="com.example.sim.PhnoDummy"
+            android:label="@string/title_activity_phno_dummy" >
+        </activity>
+        <activity
+            android:name="com.example.sim.SafeDummy"
+            android:label="@string/title_activity_safe_dummy" >
+        </activity>
+    </application>
+
+</manifest>
